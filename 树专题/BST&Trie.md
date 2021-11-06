@@ -103,6 +103,36 @@ class Solution {
 
 同235解法1
 
+### [530. 二叉搜索树的最小绝对差](https://leetcode-cn.com/problems/minimum-absolute-difference-in-bst/)
+
+```java
+class Solution {
+    int pre = -10000, min = Integer.MAX_VALUE;
+    public int getMinimumDifference(TreeNode root) {
+        if(root == null ||root.left == null && root.right == null){
+            return 0;
+        }
+        dfs(root);
+        return min;
+    }
+
+    public void dfs(TreeNode root) {
+        if(root == null) {
+            return;
+        }
+        dfs(root.left);
+        min = Math.min(min, root.val - pre);
+        pre = root.val;
+        dfs(root.right);
+    }
+}
+```
+
+##### 思路
+
+1. 利用pre暂存上一节点值
+2. 相邻两节点存在最小值，所以采用中序遍历。
+
 ### [538. 把二叉搜索树转换为累加树](https://leetcode-cn.com/problems/convert-bst-to-greater-tree/)
 
 ```java
