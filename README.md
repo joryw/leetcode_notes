@@ -2,9 +2,9 @@
 
 ## 树
 
-[递归&前中后层遍历](https://github.com/junchao-ustc/leetcode_notes/blob/main/%E6%A0%91%E4%B8%93%E9%A2%98/%E9%80%92%E5%BD%92%26%E5%89%8D%E4%B8%AD%E5%90%8E%E5%B1%82%E9%81%8D%E5%8E%86.md)
+[递归&前中后层遍历](https://github.com/junchao-ustc/leetcode_notes/blob/main/tree/%E9%80%92%E5%BD%92%26%E5%89%8D%E4%B8%AD%E5%90%8E%E5%B1%82%E9%81%8D%E5%8E%86.md)
 
-[BST&Trie](https://github.com/junchao-ustc/leetcode_notes/blob/main/%E6%A0%91%E4%B8%93%E9%A2%98/BST%26Trie.md)
+[BST&Trie](https://github.com/junchao-ustc/leetcode_notes/blob/main/tree/BST%26Trie.md)
 
 ### 刷题统计
 
