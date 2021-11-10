@@ -6,6 +6,8 @@
 
 [BST&Trie](https://github.com/junchao-ustc/leetcode_notes/blob/main/tree/BST%26Trie.md)
 
+[构建树](https://github.com/junchao-ustc/leetcode_notes/blob/main/tree/%E6%9E%84%E5%BB%BA%E6%A0%91.md)
+
 ### 刷题统计
 
 **刷题进度：**  48
