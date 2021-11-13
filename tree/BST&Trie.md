@@ -1,5 +1,106 @@
 ## 二叉搜索树（BST）
 
+### [95. 不同的二叉搜索树 II](https://leetcode-cn.com/problems/unique-binary-search-trees-ii/)
+
+#### 递归
+
+```java
+class Solution {
+    public List<TreeNode> generateTrees(int n) {
+        if(n < 1) {
+            return new ArrayList<TreeNode>();
+        }
+        return generateTrees(1, n);
+    }
+
+    public List<TreeNode> generateTrees(int start, int end) {
+        List<TreeNode> list = new ArrayList();
+        if(start > end) {
+            list.add(null);
+            return list;
+        }
+        for(int i = start; i <= end; i++) {
+            List<TreeNode> left = generateTrees(start, i - 1);
+            List<TreeNode> right = generateTrees(i +1, end);
+
+            for(TreeNode l : left) {
+                for(TreeNode r : right) {
+                    TreeNode root = new TreeNode(i);
+                    root.left = l;
+                    root.right = r;
+                    list.add(root);
+                }
+            }
+        }
+        return list;
+    }
+}
+```
+
+##### 思路
+
+1. 用辅助函数，添加start、end变量，去构造左右子树
+2. 用`for(int i = start; i <= end; i++)` ，去循环构造根节点。
+3. 拿到下层所有的`left`和`right`，用二次循环逐个构造二叉搜索树。
+
+### [96. 不同的二叉搜索树](https://leetcode-cn.com/problems/unique-binary-search-trees/)
+
+#### 动态规划
+
+```java
+class Solution {
+    public int numTrees(int n) {
+        int[] dp = new int[n + 1];
+        dp[0] = 1;
+        dp[1] = 1;
+        for(int i = 2; i <= n; i++) {
+            for(int j = 1; j <= i; j++){
+                dp[i] += dp[j-1]*dp[i-j];
+            }
+        }
+        return dp[n];
+    }
+}
+```
+
+##### 思路
+
+如下图所示，推导卡特兰数
+
+![image-20211112172659613](BST&Trie.assets/image-20211112172659613.png)
+
+>卡特兰数是[组合数学](https://baike.baidu.com/item/组合数学)中一个常出现于各种计数问题中的[数列](https://baike.baidu.com/item/数列)。以中国蒙古族数学家[明安图](https://baike.baidu.com/item/明安图/24682)和[比利时](https://baike.baidu.com/item/比利时)的数学家[欧仁·查理·卡特兰](https://baike.baidu.com/item/欧仁·查理·卡特兰/16718709)的名字来命名，其前几项为（从第0项开始）：1, 1, 2, 5, 14, 42, 132, 429, 1430, 4862, 16796, 58786, 208012, 742900, 2674440, 9694845, 35357670, 129644790, 477638700, 1767263190, 6564120420, 24466267020, 91482563640, 343059613650, 1289904147324, 4861946401452, ...
+
+如下图构造**重复子问题**
+
+![image-20211112172914745](BST&Trie.assets/image-20211112172914745.png)
+
+n=3的时候，分别计算根节点为1,2,3的个数，  每个作为根节点的个数，为左右子树乘积。
+
+**转移方程**如下图
+
+![image.png](BST&Trie.assets/a4d9d01db1e7abfcc3a047723b17bcb69ab9085cdf22d49955a34ba9d054ae85-image.png)
+
+#### 数学法
+
+```java
+class Solution {
+    public int numTrees(int n) {
+        long C = 1;
+        for(int i = 1; i < n; i++) {
+            C = (2 *(2 * i + 1) * C) / (i + 2);
+        }
+        return (int)C;
+    }
+}
+```
+
+直接使用解法一卡特兰数的通项公式
+
+![image-20211112173259253](BST&Trie.assets/image-20211112173259253.png)
+
+
+
 ### [98. 验证二叉搜索树](https://leetcode-cn.com/problems/validate-binary-search-tree/)
 
 ```java
@@ -651,6 +752,30 @@ class Solution {
 ##### 思路
 
 1. 利用二叉搜索树的特性，大于往左边找，小于往右边找，直到找到空节点，就可以插入。
+
+### [1038. 把二叉搜索树转换为累加树](https://leetcode-cn.com/problems/binary-search-tree-to-greater-sum-tree/)
+
+```java
+class Solution {
+    int pre = 0;
+    public TreeNode bstToGst(TreeNode root) {
+        dfs(root);
+        return root;
+    }
+
+    public void dfs(TreeNode root) {
+        if(root == null) return;
+        dfs(root.right);
+        root.val += pre;
+        pre = root.val;
+        dfs(root.left);
+    }
+}
+```
+
+##### 思路
+
+右中左，逆中序累加根节点值，没啥好讲的
 
 ## Trie（前缀树）
 
