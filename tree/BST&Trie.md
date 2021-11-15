@@ -753,6 +753,65 @@ class Solution {
 
 1. 利用二叉搜索树的特性，大于往左边找，小于往右边找，直到找到空节点，就可以插入。
 
+### [1373. 二叉搜索子树的最大键值和](https://leetcode-cn.com/problems/maximum-sum-bst-in-binary-tree/)
+
+```java
+class Solution {
+    //全局最大值
+    int max = Integer.MIN_VALUE;
+    //标记是否为二叉搜索树
+    boolean flag = true;
+    //二叉搜索树在中序遍历的上一个结点值
+    int pre = Integer.MIN_VALUE;
+    public int maxSumBST(TreeNode root) {
+        if(root == null) return 0;
+        //先序遍历，验证是否为二叉搜索树
+        isBST(root);
+        if(flag) {
+            //计算结点值和
+            count(root);
+            //同样初始化
+            flag = true;
+            pre = Integer.MIN_VALUE;
+            //剪枝
+            return max < 0 ? 0 :max;
+        }
+        //初始化
+        flag = true;
+        pre = Integer.MIN_VALUE;
+        //向下递归
+        maxSumBST(root.left);
+        maxSumBST(root.right);
+        return max < 0 ? 0 :max;
+    }
+
+    public void isBST(TreeNode root) {
+        if(!flag || root == null) return;
+        //中序遍历验证二叉搜索树
+        isBST(root.left);
+        if(root.val <= pre) {
+            flag = false;
+        }
+        pre = root.val;
+        isBST(root.right);
+    }
+
+    public int count (TreeNode root) {
+        //二叉搜索树下的子节点也是二叉搜索树
+        if(root == null) return 0;
+        int sum = root.val + count(root.left) + count(root.right);
+        //每个节点都计算一次max值；
+        max = Math.max(max, sum);
+        return sum;
+    }
+}
+```
+
+**错因：**
+
+1. pre应该为全局的上一个节点，而不能作为函数的遍历去计算，这样会在每层存在对应的值。
+2. 每次验证二叉搜索树都要进行初始化
+
 ### [1038. 把二叉搜索树转换为累加树](https://leetcode-cn.com/problems/binary-search-tree-to-greater-sum-tree/)
 
 ```java
