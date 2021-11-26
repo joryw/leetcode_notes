@@ -836,6 +836,37 @@ class Solution {
 
 右中左，逆中序累加根节点值，没啥好讲的
 
+### [剑指 Offer 54. 二叉搜索树的第k大节点](https://leetcode-cn.com/problems/er-cha-sou-suo-shu-de-di-kda-jie-dian-lcof/)
+
+```java
+class Solution {
+    int cnt, ans;
+    public int kthLargest(TreeNode root, int k) {
+        cnt = k;
+        ans = 0;
+        Helper(root);
+        return ans;
+    }
+
+    public void Helper(TreeNode root) {
+        if(cnt == 0 || root == null) {
+            return;
+        }
+        Helper(root.right);
+        cnt--;
+        if(cnt == 0) {
+            ans = root.val;
+        }
+        Helper(root.left);
+    }
+}
+```
+
+##### 思路
+
+1. 把k单独脱离出来，跟ans一起作为全局变量
+2. 右中左，逆中序遍历。
+
 ## Trie（前缀树）
 
 ![img](BST&Trie.assets/5c638d59-d4ae-4ba4-ad44-80bdc30f38dd.jpg)
