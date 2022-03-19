@@ -176,9 +176,11 @@
 
 ## 搜索
 
-| 题目                                                         | 已完成 | 难度 | 好题 | 错题 | 备注 |
-| ------------------------------------------------------------ | ------ | ---- | ---- | ---- | ---- |
-| [剑指 Offer 13. 机器人的运动范围](https://leetcode-cn.com/problems/ji-qi-ren-de-yun-dong-fan-wei-lcof/) | ✔      | mid  |      |      |      |
+| 题目                                                         | 已完成 | 难度 | 好题 | 错题 | 分类                           | 备注    |
+| ------------------------------------------------------------ | ------ | ---- | ---- | ---- | ------------------------------ | ------- |
+| [剑指 Offer 13. 机器人的运动范围](https://leetcode-cn.com/problems/ji-qi-ren-de-yun-dong-fan-wei-lcof/) | ✔      | mid  |      |      | [dfs.md](search\dfs.md)        |         |
+| [542. 01 矩阵](https://leetcode-cn.com/problems/01-matrix/)  | ✔      | mid  |      | ✔    | [bfs.md](search\bfs.md) <br>dp |         |
+| [1162. 地图分析](https://leetcode-cn.com/problems/as-far-from-land-as-possible/) | ✔      | mid  |      |      | [bfs.md](search\bfs.md) <br>dp | 同542题 |
 
 ## 栈、队列与堆
 
