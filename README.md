@@ -18,20 +18,20 @@
 
 | 题目                                                         | 已完成 | 难度 | 好题 | 错题 | 备注                                                 |
 | ------------------------------------------------------------ | ------ | ---- | ---- | ---- | ---------------------------------------------------- |
-| 94. 二叉树的中序遍历                                         | √      | esay | √    |      | 栈、莫里斯遍历可以重做                               |
-| 95. 不同的二叉搜索树 II                                      | √      | mid  | √    | √    | 递归、动态规划                                       |
-| 96. 不同的二叉搜索树                                         | √      | mid  |      | √    | 卡特兰数                                             |
-| 98. 验证二叉搜索树                                           | √      | mid  |      |      |                                                      |
-| 99. 恢复二叉搜索树                                           | √      | mid  |      | √    | 其实再思考一下能想出来                               |
-| 100. 相同的树                                                | √      | easy |      |      |                                                      |
-| 101. 对称二叉树<br>剑指 Offer 28. 对称的二叉树               | √      | easy |      |      |                                                      |
-| 102. 二叉树的层序遍历<br>剑指 Offer 32 - II. 从上到下打印二叉树 II | √      | mid  |      |      | 模板                                                 |
-| 103. 二叉树的锯齿形层序遍历<br>剑指 Offer 32 - I. 从上到下打印二叉树<br>剑指 Offer 32 - III. 从上到下打印二叉树 III | √      | mid  |      |      |                                                      |
-| 104. 二叉树的最大深度<br>剑指 Offer 55 - I. 二叉树的深度     | √      | easy |      |      |                                                      |
-| 105. 从前序与中序遍历序列构造二叉树<br>剑指 Offer 07. 重建二叉树 | √      | mid  |      |      |                                                      |
-| 106. 从中序与后序遍历序列构造二叉树                          | √      | mid  | √    |      |                                                      |
-| 107. 二叉树的层序遍历 II                                     | √      | mid  |      |      |                                                      |
-| 108. 将有序数组转换为二叉搜索树                              | √      | esay |      |      | 好好分析，能做出来                                   |
+| [94. 二叉树的中序遍历](https://leetcode-cn.com/problems/binary-tree-inorder-traversal) | √      | esay | √    |      | 栈、莫里斯遍历可以重做                               |
+| [95. 不同的二叉搜索树 II](https://leetcode-cn.com/problems/unique-binary-search-trees-ii) | √      | mid  | √    | √    | 递归、动态规划                                       |
+| [96. 不同的二叉搜索树](https://leetcode-cn.com/problems/unique-binary-search-trees) | √      | mid  |      | √    | 卡特兰数                                             |
+| [98. 验证二叉搜索树](https://leetcode-cn.com/problems/validate-binary-search-tree) | √      | mid  |      |      |                                                      |
+| [99. 恢复二叉搜索树](https://leetcode-cn.com/problems/recover-binary-search-tree) | √      | mid  |      | √    | 其实再思考一下能想出来                               |
+| [100. 相同的树](https://leetcode-cn.com/problems/same-tree)  | √      | easy |      |      |                                                      |
+| [101. 对称二叉树](https://leetcode-cn.com/problems/symmetric-tree)<br>[剑指 Offer 28. 对称的二叉树](https://leetcode-cn.com/problems/dui-cheng-de-er-cha-shu-lcof) | √      | easy |      |      |                                                      |
+| [102. 二叉树的层序遍历](https://leetcode-cn.com/problems/binary-tree-level-order-traversal)<br>[剑指 Offer 32 - II. 从上到下打印二叉树 II](https://leetcode-cn.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-ii-lcof/) | √      | mid  |      |      | 模板                                                 |
+| [103. 二叉树的锯齿形层序遍历](https://leetcode-cn.com/problems/binary-tree-zigzag-level-order-traversal)<br>[剑指 Offer 32 - II. 从上到下打印二叉树 II](https://leetcode-cn.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-ii-lcof)<br>[剑指 Offer 32 - III. 从上到下打印二叉树 III](https://leetcode-cn.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-iii-lcof) | √      | mid  |      |      |                                                      |
+| [104. 二叉树的最大深度](https://leetcode-cn.com/problems/maximum-depth-of-binary-tree)<br>[剑指 Offer 55 - I. 二叉树的深度](https://leetcode-cn.com/problems/er-cha-shu-de-shen-du-lcof) | √      | easy |      |      |                                                      |
+| [105. 从前序与中序遍历序列构造二叉树](https://leetcode-cn.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal)<br>[剑指 Offer 07. 重建二叉树](https://leetcode-cn.com/problems/zhong-jian-er-cha-shu-lcof) | √      | mid  |      |      |                                                      |
+| [106. 从中序与后序遍历序列构造二叉树](https://leetcode-cn.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal) | √      | mid  | √    |      |                                                      |
+| [107. 二叉树的层序遍历 II](https://leetcode-cn.com/problems/binary-tree-level-order-traversal-ii) | √      | mid  |      |      |                                                      |
+| [108. 将有序数组转换为二叉搜索树](https://leetcode-cn.com/problems/convert-sorted-array-to-binary-search-tree) | √      | esay |      |      | 好好分析，能做出来                                   |
 | 109. 有序链表转换二叉搜索树                                  | √      | mid  | √    |      | 快慢指针、中序遍历                                   |
 | 110. 平衡二叉树<br>剑指 Offer 55 - II. 平衡二叉树            | √      | easy |      |      | 阻断可以看下                                         |
 | 111. 二叉树的最小深度                                        | √      | esay |      |      |                                                      |
@@ -90,13 +90,14 @@
 
 ### 刷题统计
 
-刷题数量：57
+刷题数量：64
 
 刷题表格：
 
 | 题目                                                         | 已完成 | 难度 | 好题 | 错题 | 分类                                  | 备注                                 |
 | ------------------------------------------------------------ | ------ | ---- | ---- | ---- | ------------------------------------- | ------------------------------------ |
 | 5. 最长回文子串                                              | ✔      | mid  |      |      | [回文串.md](dp\回文串.md)             | 中心扩散                             |
+| [10. 正则表达式匹配](https://leetcode-cn.com/problems/regular-expression-matching/) | ❌      |      |      |      |                                       | 思路不清晰                           |
 | [32. 最长有效括号](https://leetcode-cn.com/problems/longest-valid-parentheses/) | ✔      | hard | ✔    | ✔    | [匹配问题.md](dp\匹配问题.md)         | 动态规划、栈、双指针                 |
 | 53. 最大子数组和                                             | ✔      | esay |      |      | [子序列.md](dp\子序列.md)             |                                      |
 | 62. 不同路径                                                 | ✔      | mid  |      |      | [矩阵路径.md](dp\矩阵路径.md)         |                                      |
@@ -112,12 +113,13 @@
 | 121. 买卖股票的最佳时机<br>[剑指 Offer 63. 股票的最大利润](https://leetcode-cn.com/problems/gu-piao-de-zui-da-li-run-lcof/) | ✔      | esay |      |      | [股票问题.md](dp\股票问题.md)         |                                      |
 | 122. 买卖股票的最佳时机 II                                   | ✔      | mid  |      |      | [股票问题.md](dp\股票问题.md)         |                                      |
 | 123. 买卖股票的最佳时机 III                                  | ✔      | hard |      | ✔    | [股票问题.md](dp\股票问题.md)         | 三维，也可以穷举                     |
-| 139. 单词拆分                                                | ✔      | mid  | ✔    | ✔    | [背包问题.md](dp\背包问题.md)         | 分阶段，从后往前匹配                 |
+| [139. 单词拆分](https://leetcode-cn.com/problems/word-break/) | ✔      | mid  | ✔    | ✔    | [背包问题.md](dp\背包问题.md)         | 分阶段，从后往前匹配                 |
 | [152. 乘积最大子数组](https://leetcode-cn.com/problems/maximum-product-subarray/) | ✔      | mid  | ✔    | ✔    | [连续子数组.md](dp\连续子数组.md)     | 当前最大值、最小值和全局最大值       |
 | [188. 买卖股票的最佳时机 IV](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-iv/) | ✔      | hard |      |      | [股票问题.md](dp\股票问题.md)         | 根据123题可以举一反三                |
 | 198. 打家劫舍<br>[面试题 17.16. 按摩师](https://leetcode-cn.com/problems/the-masseuse-lcci/) | ✔      | mid  |      |      | [斐波那契数列.md](dp\斐波那契数列.md) |                                      |
 | 213. 打家劫舍 II                                             | ✔      | mid  |      |      | [斐波那契数列.md](dp\斐波那契数列.md) |                                      |
 | [221. 最大正方形](https://leetcode-cn.com/problems/maximal-square/) | ✔      | mid  |      |      | [数学.md](dp\数学.md)                 |                                      |
+| [264. 丑数 II](https://leetcode-cn.com/problems/ugly-number-ii/) | ✔      | mid  |      | ✔    | [数学.md](dp\数学.md)                 |                                      |
 | 279. 完全平方数                                              | ✔      | mid  |      |      | [分割整数.md](dp\分割整数.md)         |                                      |
 | 300. 最长递增子序列                                          | ✔      | mid  |      |      | [子序列.md](dp\子序列.md)             |                                      |
 | 303. 区域和检索 - 数组不可变                                 | ✔      | esay |      |      | [数组区间.md](dp\数组区间.md)         |                                      |
@@ -125,6 +127,7 @@
 | 322. 零钱兑换                                                | ✔      | mid  |      |      | [背包问题.md](dp\背包问题.md)         |                                      |
 | [338. 比特位计数](https://leetcode-cn.com/problems/counting-bits/) | ✔      | esay |      | ✔    | [数学.md](dp\数学.md)                 | 思路不清晰，耗时太久了               |
 | 343. 整数拆分<br>[剑指 Offer 14- I. 剪绳子](https://leetcode-cn.com/problems/jian-sheng-zi-lcof/) | ✔      | mid  |      |      | [分割整数.md](dp\分割整数.md)         | 分类讨论                             |
+| [354. 俄罗斯套娃信封问题](https://leetcode-cn.com/problems/russian-doll-envelopes/) | ✔      | hard | ✔    | ✔    | [子序列.md](dp\子序列.md)             |                                      |
 | 377. 组合总和 Ⅳ                                              | ✔      | mid  | ✔    | ✔    | [背包问题.md](dp\背包问题.md)         | 组合问题，应该从子问题中得归纳出来   |
 | 392. 判断子序列                                              | ✔      | esay |      |      | [编辑距离.md](dp\编辑距离.md)         |                                      |
 | 413. 等差数列划分                                            | ✔      | mid  | ✔    |      | [数组区间.md](dp\数组区间.md)         | 动态规划比滑动窗口更简便             |
@@ -142,7 +145,10 @@
 | 674. 最长连续递增序列                                        | ✔      | esay |      |      | [子序列.md](dp\子序列.md)             |                                      |
 | 714. 买卖股票的最佳时机含手续费                              | ✔      | mid  |      |      | [股票问题.md](dp\股票问题.md)         | 参考状态机                           |
 | 718. 最长重复子数组                                          | ✔      | mid  |      |      | [子序列.md](dp\子序列.md)             |                                      |
+| [740. 删除并获得点数](https://leetcode-cn.com/problems/delete-and-earn/) | ✔      | mid  |      | ✔    | [斐波那契数列.md](dp\斐波那契数列.md) | 一开始没想到题型                     |
 | [746. 使用最小花费爬楼梯](https://leetcode-cn.com/problems/min-cost-climbing-stairs/) | ✔      | easy |      |      | [斐波那契数列.md](dp\斐波那契数列.md) |                                      |
+| [931. 下降路径最小和](https://leetcode-cn.com/problems/minimum-falling-path-sum/) | ✔      | mid  |      |      | [矩阵路径.md](dp\矩阵路径.md)         |                                      |
+| [1025. 除数博弈](https://leetcode-cn.com/problems/divisor-game/) | ✔      | easy |      |      | [数学.md](dp\数学.md)                 |                                      |
 | 1035. 不相交的线                                             | ✔      | mid  |      |      | [子序列.md](dp\子序列.md)             |                                      |
 | [1137. 第 N 个泰波那契数](https://leetcode-cn.com/problems/n-th-tribonacci-number/) | ✔      | esay |      |      | [斐波那契数列.md](dp\斐波那契数列.md) |                                      |
 | 1143. 最长公共子序列                                         | ✔      | mid  |      |      | [子序列.md](dp\子序列.md)             |                                      |
@@ -151,22 +157,25 @@
 | [剑指 Offer 42. 连续子数组的最大和](https://leetcode-cn.com/problems/lian-xu-zi-shu-zu-de-zui-da-he-lcof/) | ✔      | esay |      |      | [连续子数组.md](dp\连续子数组.md)     |                                      |
 | [剑指 Offer 46. 把数字翻译成字符串](https://leetcode-cn.com/problems/ba-shu-zi-fan-yi-cheng-zi-fu-chuan-lcof/) | ✔      | mid  |      | ✔    | [分割整数.md](dp\分割整数.md)         | 没处理好无法多翻译子串细节           |
 | [剑指 Offer 47. 礼物的最大价值](https://leetcode-cn.com/problems/li-wu-de-zui-da-jie-zhi-lcof/) | ✔      | mid  |      |      | [矩阵路径.md](dp\矩阵路径.md)         |                                      |
+| [剑指 Offer 60. n个骰子的点数](https://leetcode-cn.com/problems/nge-tou-zi-de-dian-shu-lcof/) | ✔      | mid  |      | ✔    | [数学.md](dp\数学.md)                 | 细节没处理好                         |
 | 原创题：信件错排                                             | ✔      | mid  | ✔    | ✔    | [斐波那契数列.md](dp\斐波那契数列.md) | 花了很长时间理解答案                 |
 | 原创题：母牛生产                                             | ✔      | mid  |      |      | [斐波那契数列.md](dp\斐波那契数列.md) |                                      |
 
 ## 回溯
 
-| 题目                                                         | 已完成 | 难度 | 好题 | 错题 | 备注           |
-| ------------------------------------------------------------ | ------ | ---- | ---- | ---- | -------------- |
-| [22. 括号生成](https://leetcode-cn.com/problems/generate-parentheses/) | ✔      | mid  |      |      | 找好三个if条件 |
+| 题目                                                         | 已完成 | 难度 | 好题 | 错题 | 备注                |
+| ------------------------------------------------------------ | ------ | ---- | ---- | ---- | ------------------- |
+| [22. 括号生成](https://leetcode-cn.com/problems/generate-parentheses/) | ✔      | mid  |      |      | 找好三个if条件      |
+| [131. 分割回文串](https://leetcode-cn.com/problems/palindrome-partitioning/) |        |      |      |      |                     |
+| [140. 单词拆分 II](https://leetcode-cn.com/problems/word-break-ii/) | ✔      | hard | ✔    |      | 耗时长，调bug时间长 |
 
 ## 贪心
 
-| 题目                                                         | 已完成 | 难度 | 好题 | 错题 | 备注 |
-| ------------------------------------------------------------ | ------ | ---- | ---- | ---- | ---- |
-| [45. 跳跃游戏 II](https://leetcode-cn.com/problems/jump-game-ii/) | ✔      | mid  |      |      |      |
-| [55. 跳跃游戏](https://leetcode-cn.com/problems/jump-game/)  | ✔      | mid  |      |      |      |
-| 376. 摆动序列                                                | ✔      | mid  | ✔    |      |      |
+| 题目                                                         | 已完成 | 难度 | 好题 | 错题 | 分类                                                 | 备注 |
+| ------------------------------------------------------------ | ------ | ---- | ---- | ---- | ---------------------------------------------------- | ---- |
+| [45. 跳跃游戏 II](https://leetcode-cn.com/problems/jump-game-ii/) | ✔      | mid  |      |      |                                                      |      |
+| [55. 跳跃游戏](https://leetcode-cn.com/problems/jump-game/)  | ✔      | mid  |      |      |                                                      |      |
+| 376. 摆动序列                                                | ✔      | mid  | ✔    |      | [贪心.md](greed\贪心.md) & [子序列.md](dp\子序列.md) |      |
 
 ## 双指针
 
@@ -188,4 +197,17 @@
 | ------------------------------------------------------------ | ------ | ---- | ---- | ---- | --------------------------------------- | -------------- |
 | [84. 柱状图中最大的矩形](https://leetcode-cn.com/problems/largest-rectangle-in-histogram/) | ✔      | hard |      | ✔    | [单调栈.md](stack&queue&heap\单调栈.md) | 对单调栈不熟悉 |
 | [85. 最大矩形](https://leetcode-cn.com/problems/maximal-rectangle/) | ✔      | hard |      |      | [单调栈.md](stack&queue&heap\单调栈.md) | 参考上题       |
+
+
+
+---
+
+
+
+## 代办
+
+- [ ] 将所有题目对应相对题目
+- [ ] 将所有题目对应上分类链接
+- [ ] 将错题再做一遍
+- [ ] 将❌的题目做出来
 

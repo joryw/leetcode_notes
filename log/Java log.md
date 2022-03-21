@@ -14,5 +14,23 @@ Deque<Integer> stack = new LinkedList<>();
 
 System.arraycopy(oldArray, oldstart, newArray,newStart,newEnd);
 
+### 3.StringBuilder删除最后一个元素
 
+sb.deleteCharAt(sb.length()-1);
+
+### 4.字符串裁剪
+
+```
+str = str.substring(start,);
+```
+
+### 5.二维数组优先对属性1升序，再属性2降序
+
+```java
+Arrays.sort(arr, new Comparator<int[]>(){
+    public int compare(int[] a, int[] b) {
+        return a[0] == b[0] ? b[1] - a[1] : a[0] - b[0];
+    }
+});
+```
 
