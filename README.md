@@ -1,4 +1,4 @@
-# tleetcode_notes
+# leetcode_notes
 
 **当前总题数：132(不包含重复题目)**
 
@@ -115,6 +115,7 @@
 | 123. 买卖股票的最佳时机 III                                  | ✔      | hard |      | ✔    | [股票问题.md](dp\股票问题.md)         | 三维，也可以穷举                     |
 | [139. 单词拆分](https://leetcode-cn.com/problems/word-break/) | ✔      | mid  | ✔    | ✔    | [背包问题.md](dp\背包问题.md)         | 分阶段，从后往前匹配                 |
 | [152. 乘积最大子数组](https://leetcode-cn.com/problems/maximum-product-subarray/) | ✔      | mid  | ✔    | ✔    | [连续子数组.md](dp\连续子数组.md)     | 当前最大值、最小值和全局最大值       |
+| [174. 地下城游戏](https://leetcode-cn.com/problems/dungeon-game/) | ✔      | hard |      | ✔    | [矩阵路径.md](dp\矩阵路径.md)         | 状态方程                             |
 | [188. 买卖股票的最佳时机 IV](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-iv/) | ✔      | hard |      |      | [股票问题.md](dp\股票问题.md)         | 根据123题可以举一反三                |
 | 198. 打家劫舍<br>[面试题 17.16. 按摩师](https://leetcode-cn.com/problems/the-masseuse-lcci/) | ✔      | mid  |      |      | [斐波那契数列.md](dp\斐波那契数列.md) |                                      |
 | 213. 打家劫舍 II                                             | ✔      | mid  |      |      | [斐波那契数列.md](dp\斐波那契数列.md) |                                      |
@@ -138,11 +139,12 @@
 | 494. 目标和                                                  | ✔      | mid  |      |      | [背包问题.md](dp\背包问题.md)         |                                      |
 | [516. 最长回文子序列](https://leetcode-cn.com/problems/longest-palindromic-subsequence/) | ✔      | mid  | ✔    | ✔    | [回文串.md](dp\回文串.md)             | 没有独立思考出状态方程               |
 | 518. 零钱兑换 II                                             | ✔      | mid  | ✔    | ✔    | [背包问题.md](dp\背包问题.md)         | 没有充分理解，类似爬楼梯             |
-| 583. 两个字符串的删除操作                                    | ✔      | mid  |      |      | [编辑距离.md](dp\编辑距离.md)         |                                      |
+| 583. 两个字符串的删除操作                                    | ✔      | mid  |      |      | [子序列.md](dp\子序列.md)             |                                      |
 | 646. 最长数对链                                              | ✔      | mid  | ✔    |      | [子序列.md](dp\子序列.md)             | 画图讨论、贪心                       |
 | [647. 回文子串](https://leetcode-cn.com/problems/palindromic-substrings/) | ✔      | mid  |      | ✔    | [回文串.md](dp\回文串.md)             | 动态规划或中心扩展                   |
 | 650. 只有两个键的键盘                                        | ✔      | mid  |      | ✔    | [编辑距离.md](dp\编辑距离.md)         | 解题耗时长                           |
 | 674. 最长连续递增序列                                        | ✔      | esay |      |      | [子序列.md](dp\子序列.md)             |                                      |
+| [712. 两个字符串的最小ASCII删除和](https://leetcode-cn.com/problems/minimum-ascii-delete-sum-for-two-strings/) | ✔      | mid  |      | ✔    | [子序列.md](dp\子序列.md)             | 删除状态方程没定义好                 |
 | 714. 买卖股票的最佳时机含手续费                              | ✔      | mid  |      |      | [股票问题.md](dp\股票问题.md)         | 参考状态机                           |
 | 718. 最长重复子数组                                          | ✔      | mid  |      |      | [子序列.md](dp\子序列.md)             |                                      |
 | [740. 删除并获得点数](https://leetcode-cn.com/problems/delete-and-earn/) | ✔      | mid  |      | ✔    | [斐波那契数列.md](dp\斐波那契数列.md) | 一开始没想到题型                     |
