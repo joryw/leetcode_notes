@@ -99,7 +99,7 @@
 | 5. 最长回文子串                                              | ✔      | mid  |      |      | [回文串.md](dp\回文串.md)             | 中心扩散                             |
 | [10. 正则表达式匹配](https://leetcode-cn.com/problems/regular-expression-matching/) | ❌      |      |      |      |                                       | 思路不清晰                           |
 | [32. 最长有效括号](https://leetcode-cn.com/problems/longest-valid-parentheses/) | ✔      | hard | ✔    | ✔    | [匹配问题.md](dp\匹配问题.md)         | 动态规划、栈、双指针                 |
-| 53. 最大子数组和                                             | ✔      | esay |      |      | [子序列.md](dp\子序列.md)             |                                      |
+| 53. 最大子数组和                                             | ✔      | esay |      |      | [子序列.md](dp\子序列.md)&贪心        |                                      |
 | 62. 不同路径                                                 | ✔      | mid  |      |      | [矩阵路径.md](dp\矩阵路径.md)         |                                      |
 | [63. 不同路径 II](https://leetcode-cn.com/problems/unique-paths-ii/) | ✔      | mid  | ✔    |      | [矩阵路径.md](dp\矩阵路径.md)         | 初始化没处理好，解答太慢了           |
 | 64. 最小路径和                                               | ✔      | mid  |      |      | [矩阵路径.md](dp\矩阵路径.md)         |                                      |
@@ -110,8 +110,8 @@
 | [118. 杨辉三角](https://leetcode-cn.com/problems/pascals-triangle/) | ✔      | easy |      |      | [数学.md](dp\数学.md)                 | 构建pre、cur列表                     |
 | 119. 杨辉三角 II                                             | ✔      | esay |      |      | [数学.md](dp\数学.md)                 |                                      |
 | [120. 三角形最小路径和](https://leetcode-cn.com/problems/triangle/) | ✔      | mid  | ✔    | ✔    | [矩阵路径.md](dp\矩阵路径.md)         | 回溯超时，动态规划应自底向上比较简单 |
-| 121. 买卖股票的最佳时机<br>[剑指 Offer 63. 股票的最大利润](https://leetcode-cn.com/problems/gu-piao-de-zui-da-li-run-lcof/) | ✔      | esay |      |      | [股票问题.md](dp\股票问题.md)         |                                      |
-| 122. 买卖股票的最佳时机 II                                   | ✔      | mid  |      |      | [股票问题.md](dp\股票问题.md)         |                                      |
+| 121. 买卖股票的最佳时机<br>[剑指 Offer 63. 股票的最大利润](https://leetcode-cn.com/problems/gu-piao-de-zui-da-li-run-lcof/) | ✔      | esay |      |      | [股票问题.md](dp\股票问题.md)&贪心    |                                      |
+| 122. 买卖股票的最佳时机 II                                   | ✔      | mid  |      |      | [股票问题.md](dp\股票问题.md)&贪心    |                                      |
 | 123. 买卖股票的最佳时机 III                                  | ✔      | hard |      | ✔    | [股票问题.md](dp\股票问题.md)         | 三维，也可以穷举                     |
 | [139. 单词拆分](https://leetcode-cn.com/problems/word-break/) | ✔      | mid  | ✔    | ✔    | [背包问题.md](dp\背包问题.md)         | 分阶段，从后往前匹配                 |
 | [152. 乘积最大子数组](https://leetcode-cn.com/problems/maximum-product-subarray/) | ✔      | mid  | ✔    | ✔    | [连续子数组.md](dp\连续子数组.md)     | 当前最大值、最小值和全局最大值       |
@@ -130,11 +130,11 @@
 | 343. 整数拆分<br>[剑指 Offer 14- I. 剪绳子](https://leetcode-cn.com/problems/jian-sheng-zi-lcof/) | ✔      | mid  |      |      | [分割整数.md](dp\分割整数.md)         | 分类讨论                             |
 | [354. 俄罗斯套娃信封问题](https://leetcode-cn.com/problems/russian-doll-envelopes/) | ✔      | hard | ✔    | ✔    | [子序列.md](dp\子序列.md)             |                                      |
 | 377. 组合总和 Ⅳ                                              | ✔      | mid  | ✔    | ✔    | [背包问题.md](dp\背包问题.md)         | 组合问题，应该从子问题中得归纳出来   |
-| 392. 判断子序列                                              | ✔      | esay |      |      | [编辑距离.md](dp\编辑距离.md)         |                                      |
+| 392. 判断子序列                                              | ✔      | esay |      |      | [编辑距离.md](dp\编辑距离.md)&贪心    |                                      |
 | 413. 等差数列划分                                            | ✔      | mid  | ✔    |      | [数组区间.md](dp\数组区间.md)         | 动态规划比滑动窗口更简便             |
 | 416. 分割等和子集                                            | ✔      | mid  |      |      | [背包问题.md](dp\背包问题.md)         |                                      |
-| 435. 无重叠区间                                              | ✔      | mid  |      |      | [子序列.md](dp\子序列.md)             | 跟646类似                            |
-| 452. 用最少数量的箭引爆气球                                  | ✔      | mid  |      |      | [子序列.md](dp\子序列.md)             | 有坑                                 |
+| 435. 无重叠区间                                              | ✔      | mid  |      |      | [子序列.md](dp\子序列.md)&贪心        | 跟646类似                            |
+| 452. 用最少数量的箭引爆气球                                  | ✔      | mid  |      |      | [子序列.md](dp\子序列.md)&贪心        | 有坑                                 |
 | 474. 一和零                                                  | ✔      | mid  | ✔    | ✔    | [背包问题.md](dp\背包问题.md)         | 二维0-1背包                          |
 | 494. 目标和                                                  | ✔      | mid  |      |      | [背包问题.md](dp\背包问题.md)         |                                      |
 | [516. 最长回文子序列](https://leetcode-cn.com/problems/longest-palindromic-subsequence/) | ✔      | mid  | ✔    | ✔    | [回文串.md](dp\回文串.md)             | 没有独立思考出状态方程               |
@@ -173,11 +173,22 @@
 
 ## 贪心
 
-| 题目                                                         | 已完成 | 难度 | 好题 | 错题 | 分类                                                 | 备注 |
-| ------------------------------------------------------------ | ------ | ---- | ---- | ---- | ---------------------------------------------------- | ---- |
-| [45. 跳跃游戏 II](https://leetcode-cn.com/problems/jump-game-ii/) | ✔      | mid  |      |      |                                                      |      |
-| [55. 跳跃游戏](https://leetcode-cn.com/problems/jump-game/)  | ✔      | mid  |      |      |                                                      |      |
-| 376. 摆动序列                                                | ✔      | mid  | ✔    |      | [贪心.md](greed\贪心.md) & [子序列.md](dp\子序列.md) |      |
+刷题数量：9
+
+| 题目                                                         | 已完成 | 难度 | 好题 | 错题 | 分类                                                 | 备注                 |
+| ------------------------------------------------------------ | ------ | ---- | ---- | ---- | ---------------------------------------------------- | -------------------- |
+| [45. 跳跃游戏 II](https://leetcode-cn.com/problems/jump-game-ii/) | ✔      | mid  |      |      |                                                      |                      |
+| [55. 跳跃游戏](https://leetcode-cn.com/problems/jump-game/)  | ✔      | mid  |      |      |                                                      |                      |
+| [134. 加油站](https://leetcode-cn.com/problems/gas-station/) | ✔      | mid  |      |      |                                                      |                      |
+| [253. 会议室 II](https://leetcode-cn.com/problems/meeting-rooms-ii) | ❌      | mid  |      |      |                                                      | 会员题目             |
+| 376. 摆动序列                                                | ✔      | mid  | ✔    |      | [贪心.md](greed\贪心.md) & [子序列.md](dp\子序列.md) |                      |
+| [406. 根据身高重建队列](https://leetcode-cn.com/problems/queue-reconstruction-by-height/) | ✔      | mid  | ✔    | ✔    |                                                      |                      |
+| [455. 分发饼干](https://leetcode-cn.com/problems/assign-cookies/) | ✔      | easy |      |      |                                                      |                      |
+| [605. 种花问题](https://leetcode-cn.com/problems/can-place-flowers/) | ✔      | easy |      |      |                                                      | 并非最优             |
+| [665. 非递减数列](https://leetcode-cn.com/problems/non-decreasing-array/) | ✔      | mid  | ✔    | ✔    |                                                      | 没有想到好的解法     |
+| [763. 划分字母区间](https://leetcode-cn.com/problems/partition-labels/) | ✔      | mid  | ✔    |      | [贪心.md](greed\贪心.md) &哈希                       | 没想到最优解         |
+| [1005. K 次取反后最大化的数组和](https://leetcode-cn.com/problems/maximize-sum-of-array-after-k-negations/) | ✔      | esay |      | ✔    | 优先队列&计数统计                                    | 考虑不全面           |
+| [1024. 视频拼接](https://leetcode-cn.com/problems/video-stitching/) | ✔      | mid  | ✔    | ✔    |                                                      | 思路正确，代码没跑通 |
 
 ## 双指针
 

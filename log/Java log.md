@@ -26,11 +26,25 @@ str = str.substring(start,);
 
 ### 5.二维数组优先对属性1升序，再属性2降序
 
+#### 方法一：
+
 ```java
 Arrays.sort(arr, new Comparator<int[]>(){
     public int compare(int[] a, int[] b) {
         return a[0] == b[0] ? b[1] - a[1] : a[0] - b[0];
     }
 });
+```
+
+#### 方法二：
+
+```java
+Arrays.sort(people, (a, b)-> a[0] == b[0] ? b[1] - a[1] : a[0] - b[0]);
+```
+
+### 6.列表转数组
+
+```java
+list.toArray(new int[list.size()][2]);
 ```
 
