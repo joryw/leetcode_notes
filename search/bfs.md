@@ -89,6 +89,49 @@ class Solution {
 * 先收集所有的0，加入队列，作为每次深搜的入口，并且对1加入未访问标识
 * 深搜过程，符合边界和未访问标识， 则更新最近距离值，并加入到队列，最为以后的入口。
 
+### [1091. 二进制矩阵中的最短路径](https://leetcode-cn.com/problems/shortest-path-in-binary-matrix/)
+
+```java
+class Solution {
+    public int shortestPathBinaryMatrix(int[][] grid) {
+        int[] dx = new int[]{-1, -1, -1, 0, 0, 1, 1, 1};
+        int[] dy = new int[]{-1, 0, 1, -1, 1, -1, 0, 1};
+        int n = grid.length, m = grid[0].length;
+        if(grid[0][0] == 1 || grid[n - 1][m - 1] == 1 ) {
+            return -1;
+        }
+        if(n == 1 && m == 1) return 1;
+        int cnt = 1;
+        Queue<int[]> queue = new LinkedList<>();
+        queue.add(new int[]{0, 0});
+        while(!queue.isEmpty()) {
+            int size = queue.size();
+            cnt++;
+            for(int l = 0; l < size; l++) {
+                int[] cur = queue.poll();
+                int i = cur[0], j = cur[1];
+                for(int k = 0; k < 8; k++) {
+                    int x = dx[k] + i;
+                    int y = dy[k] + j;
+                    if(x >= 0 && x < n && y >= 0 && y < m && grid[x][y] == 0) {
+                        grid[x][y] = 1;
+                        queue.add(new int[]{x, y});
+                    }
+                    if(x == n - 1 && y == m - 1) {
+                        return cnt;
+                    }
+                }
+            }
+        }
+        return -1;
+    }
+}
+```
+
+* 方向初始化
+* 特殊情况判断
+* 加入初始节点，每次向8个方向进行扫描。到达终点直接返回cnt
+
 ### [1162. 地图分析](https://leetcode-cn.com/problems/as-far-from-land-as-possible/)
 
 ```java

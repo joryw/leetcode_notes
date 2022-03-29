@@ -48,3 +48,9 @@ Arrays.sort(people, (a, b)-> a[0] == b[0] ? b[1] - a[1] : a[0] - b[0]);
 list.toArray(new int[list.size()][2]);
 ```
 
+### 7.字符串转整数
+
+```java
+Integer.parseInt(s)
+```
+

@@ -92,8 +92,6 @@
 
 刷题数量：64
 
-刷题表格：
-
 | 题目                                                         | 已完成 | 难度 | 好题 | 错题 | 分类                                  | 备注                                 |
 | ------------------------------------------------------------ | ------ | ---- | ---- | ---- | ------------------------------------- | ------------------------------------ |
 | 5. 最长回文子串                                              | ✔      | mid  |      |      | [回文串.md](dp\回文串.md)             | 中心扩散                             |
@@ -133,8 +131,6 @@
 | 392. 判断子序列                                              | ✔      | esay |      |      | [编辑距离.md](dp\编辑距离.md)&贪心    |                                      |
 | 413. 等差数列划分                                            | ✔      | mid  | ✔    |      | [数组区间.md](dp\数组区间.md)         | 动态规划比滑动窗口更简便             |
 | 416. 分割等和子集                                            | ✔      | mid  |      |      | [背包问题.md](dp\背包问题.md)         |                                      |
-| 435. 无重叠区间                                              | ✔      | mid  |      |      | [子序列.md](dp\子序列.md)&贪心        | 跟646类似                            |
-| 452. 用最少数量的箭引爆气球                                  | ✔      | mid  |      |      | [子序列.md](dp\子序列.md)&贪心        | 有坑                                 |
 | 474. 一和零                                                  | ✔      | mid  | ✔    | ✔    | [背包问题.md](dp\背包问题.md)         | 二维0-1背包                          |
 | 494. 目标和                                                  | ✔      | mid  |      |      | [背包问题.md](dp\背包问题.md)         |                                      |
 | [516. 最长回文子序列](https://leetcode-cn.com/problems/longest-palindromic-subsequence/) | ✔      | mid  | ✔    | ✔    | [回文串.md](dp\回文串.md)             | 没有独立思考出状态方程               |
@@ -165,28 +161,49 @@
 
 ## 回溯
 
-| 题目                                                         | 已完成 | 难度 | 好题 | 错题 | 备注                |
-| ------------------------------------------------------------ | ------ | ---- | ---- | ---- | ------------------- |
-| [22. 括号生成](https://leetcode-cn.com/problems/generate-parentheses/) | ✔      | mid  |      |      | 找好三个if条件      |
-| [131. 分割回文串](https://leetcode-cn.com/problems/palindrome-partitioning/) |        |      |      |      |                     |
-| [140. 单词拆分 II](https://leetcode-cn.com/problems/word-break-ii/) | ✔      | hard | ✔    |      | 耗时长，调bug时间长 |
+题数：15
+
+| 题目                                                         | 已完成 | 难度 | 好题 | 错题 | 分类                         | 备注                 |
+| ------------------------------------------------------------ | ------ | ---- | ---- | ---- | ---------------------------- | -------------------- |
+| [17. 电话号码的字母组合](https://leetcode-cn.com/problems/letter-combinations-of-a-phone-number/) | ✔      | mid  |      |      | [组合.md](traceback\组合.md) |                      |
+| [22. 括号生成](https://leetcode-cn.com/problems/generate-parentheses/) | ✔      | mid  |      |      |                              | 找好三个if条件       |
+| [39. 组合总和](https://leetcode-cn.com/problems/combination-sum/) | ✔      | mid  |      |      | [组合.md](traceback\组合.md) |                      |
+| [40. 组合总和 II](https://leetcode-cn.com/problems/combination-sum-ii/) | ✔      | mid  |      |      | [组合.md](traceback\组合.md) |                      |
+| [46. 全排列](https://leetcode-cn.com/problems/permutations/) | ✔      | mid  |      |      | [排列.md](traceback\排列.md) |                      |
+| [47. 全排列 II](https://leetcode-cn.com/problems/permutations-ii/) | ✔      | mid  |      |      | [排列.md](traceback\排列.md) |                      |
+| [51. N 皇后](https://leetcode-cn.com/problems/n-queens/)     | ✔      | hard | ✔    |      |                              | 耗时长               |
+| [77. 组合](https://leetcode-cn.com/problems/combinations/)   | ✔      | mid  |      |      | [组合.md](traceback\组合.md) |                      |
+| [78. 子集](https://leetcode-cn.com/problems/subsets/)        | ✔      | mid  |      |      | [子集.md](traceback\子集.md) |                      |
+| [90. 子集 II](https://leetcode-cn.com/problems/subsets-ii/)  | ✔      | mid  | ✔    | ✔    | [子集.md](traceback\子集.md) | 去重方式             |
+| [93. 复原 IP 地址](https://leetcode-cn.com/problems/restore-ip-addresses/) | ✔      | mid  | ✔    |      |                              | 耗时长               |
+| [131. 分割回文串](https://leetcode-cn.com/problems/palindrome-partitioning/) | ✔      | mid  | ✔    | ✔    | [分割.md](traceback\分割.md) | 动态规划预处理没弄好 |
+| [140. 单词拆分 II](https://leetcode-cn.com/problems/word-break-ii/) | ✔      | hard | ✔    |      |                              | 耗时长，调bug时间长  |
+| [216. 组合总和 III](https://leetcode-cn.com/problems/combination-sum-iii/) | ✔      | mid  |      |      | [组合.md](traceback\组合.md) |                      |
+| [491. 递增子序列](https://leetcode-cn.com/problems/increasing-subsequences/) | ✔      | mid  | ✔    | ✔    | [子集.md](traceback\子集.md) | 循环没配置好         |
 
 ## 贪心
 
-刷题数量：9
+刷题数量：17
 
 | 题目                                                         | 已完成 | 难度 | 好题 | 错题 | 分类                                                 | 备注                 |
 | ------------------------------------------------------------ | ------ | ---- | ---- | ---- | ---------------------------------------------------- | -------------------- |
-| [45. 跳跃游戏 II](https://leetcode-cn.com/problems/jump-game-ii/) | ✔      | mid  |      |      |                                                      |                      |
-| [55. 跳跃游戏](https://leetcode-cn.com/problems/jump-game/)  | ✔      | mid  |      |      |                                                      |                      |
+| [45. 跳跃游戏 II](https://leetcode-cn.com/problems/jump-game-ii/) | ✔      | mid  |      |      | [区间问题.md](greed\区间问题.md)                     |                      |
+| [55. 跳跃游戏](https://leetcode-cn.com/problems/jump-game/)  | ✔      | mid  |      |      | [区间问题.md](greed\区间问题.md)                     |                      |
+| [56. 合并区间](https://leetcode-cn.com/problems/merge-intervals/) | ✔      | mid  |      |      | [区间问题.md](greed\区间问题.md)                     |                      |
 | [134. 加油站](https://leetcode-cn.com/problems/gas-station/) | ✔      | mid  |      |      |                                                      |                      |
-| [253. 会议室 II](https://leetcode-cn.com/problems/meeting-rooms-ii) | ❌      | mid  |      |      |                                                      | 会员题目             |
+| [135. 分发糖果](https://leetcode-cn.com/problems/candy/)     | ✔      | hard | ✔    | ✔    | [双维度权衡问题.md](greed\双维度权衡问题.md)         | 思路正确，没写出来   |
+| [253. 会议室 II](https://leetcode-cn.com/problems/meeting-rooms-ii) | ❌      | mid  |      |      |                                                      | 会员题目暂时做不了   |
 | 376. 摆动序列                                                | ✔      | mid  | ✔    |      | [贪心.md](greed\贪心.md) & [子序列.md](dp\子序列.md) |                      |
-| [406. 根据身高重建队列](https://leetcode-cn.com/problems/queue-reconstruction-by-height/) | ✔      | mid  | ✔    | ✔    |                                                      |                      |
+| [406. 根据身高重建队列](https://leetcode-cn.com/problems/queue-reconstruction-by-height/) | ✔      | mid  | ✔    | ✔    | [双维度权衡问题.md](greed\双维度权衡问题.md)         |                      |
+| 435. 无重叠区间                                              | ✔      | mid  |      |      | [区间问题.md](greed\区间问题.md)                     | 跟646类似            |
+| 452. 用最少数量的箭引爆气球                                  | ✔      | mid  |      |      | [区间问题.md](greed\区间问题.md)                     | 有坑                 |
 | [455. 分发饼干](https://leetcode-cn.com/problems/assign-cookies/) | ✔      | easy |      |      |                                                      |                      |
 | [605. 种花问题](https://leetcode-cn.com/problems/can-place-flowers/) | ✔      | easy |      |      |                                                      | 并非最优             |
 | [665. 非递减数列](https://leetcode-cn.com/problems/non-decreasing-array/) | ✔      | mid  | ✔    | ✔    |                                                      | 没有想到好的解法     |
+| [738. 单调递增的数字](https://leetcode-cn.com/problems/monotone-increasing-digits/) | ✔      | mid  | ✔    | ✔    | [贪心.md](greed\贪心.md) &正序/倒序贪心&数学         |                      |
 | [763. 划分字母区间](https://leetcode-cn.com/problems/partition-labels/) | ✔      | mid  | ✔    |      | [贪心.md](greed\贪心.md) &哈希                       | 没想到最优解         |
+| [860. 柠檬水找零](https://leetcode-cn.com/problems/lemonade-change/) | ✔      | esay |      |      |                                                      |                      |
+| [968. 监控二叉树](https://leetcode-cn.com/problems/binary-tree-cameras/) | ❌      |      |      |      |                                                      | 二叉树困难暂时跳过   |
 | [1005. K 次取反后最大化的数组和](https://leetcode-cn.com/problems/maximize-sum-of-array-after-k-negations/) | ✔      | esay |      | ✔    | 优先队列&计数统计                                    | 考虑不全面           |
 | [1024. 视频拼接](https://leetcode-cn.com/problems/video-stitching/) | ✔      | mid  | ✔    | ✔    |                                                      | 思路正确，代码没跑通 |
 
@@ -196,12 +213,13 @@
 | ------------------------------------------------------------ | ------ | ---- | ---- | ---- | ---- |
 | [42. 接雨水](https://leetcode-cn.com/problems/trapping-rain-water/) | ✔      | hard |      |      |      |
 
-## 搜索
+## 搜索（bfs\dfs）
 
 | 题目                                                         | 已完成 | 难度 | 好题 | 错题 | 分类                           | 备注    |
 | ------------------------------------------------------------ | ------ | ---- | ---- | ---- | ------------------------------ | ------- |
 | [剑指 Offer 13. 机器人的运动范围](https://leetcode-cn.com/problems/ji-qi-ren-de-yun-dong-fan-wei-lcof/) | ✔      | mid  |      |      | [dfs.md](search\dfs.md)        |         |
 | [542. 01 矩阵](https://leetcode-cn.com/problems/01-matrix/)  | ✔      | mid  |      | ✔    | [bfs.md](search\bfs.md) <br>dp |         |
+| [1091. 二进制矩阵中的最短路径](https://leetcode-cn.com/problems/shortest-path-in-binary-matrix/) | ✔      | mid  |      |      | [bfs.md](search\bfs.md)        |         |
 | [1162. 地图分析](https://leetcode-cn.com/problems/as-far-from-land-as-possible/) | ✔      | mid  |      |      | [bfs.md](search\bfs.md) <br>dp | 同542题 |
 
 ## 栈、队列与堆
