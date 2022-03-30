@@ -161,6 +161,7 @@
 | ------------------------------------------------------------ | ------ | ---- | ---- | ---- | ---------------------------- | -------------------- |
 | [17. 电话号码的字母组合](https://leetcode-cn.com/problems/letter-combinations-of-a-phone-number/) | ✔      | mid  |      |      | [组合.md](traceback\组合.md) |                      |
 | [22. 括号生成](https://leetcode-cn.com/problems/generate-parentheses/) | ✔      | mid  |      |      |                              | 找好三个if条件       |
+| [37. 解数独](https://leetcode-cn.com/problems/sudoku-solver/) | ❌      |      |      |      |                              |                      |
 | [39. 组合总和](https://leetcode-cn.com/problems/combination-sum/) | ✔      | mid  |      |      | [组合.md](traceback\组合.md) |                      |
 | [40. 组合总和 II](https://leetcode-cn.com/problems/combination-sum-ii/) | ✔      | mid  |      |      | [组合.md](traceback\组合.md) |                      |
 | [46. 全排列](https://leetcode-cn.com/problems/permutations/) | ✔      | mid  |      |      | [排列.md](traceback\排列.md) |                      |
@@ -173,6 +174,7 @@
 | [131. 分割回文串](https://leetcode-cn.com/problems/palindrome-partitioning/) | ✔      | mid  | ✔    | ✔    | [分割.md](traceback\分割.md) | 动态规划预处理没弄好 |
 | [140. 单词拆分 II](https://leetcode-cn.com/problems/word-break-ii/) | ✔      | hard | ✔    |      |                              | 耗时长，调bug时间长  |
 | [216. 组合总和 III](https://leetcode-cn.com/problems/combination-sum-iii/) | ✔      | mid  |      |      | [组合.md](traceback\组合.md) |                      |
+| [332. 重新安排行程](https://leetcode-cn.com/problems/reconstruct-itinerary/) | ❌      |      |      |      |                              |                      |
 | [491. 递增子序列](https://leetcode-cn.com/problems/increasing-subsequences/) | ✔      | mid  | ✔    | ✔    | [子集.md](traceback\子集.md) | 循环没配置好         |
 
 ## 贪心
@@ -211,10 +213,14 @@
 
 | 题目                                                         | 已完成 | 难度 | 好题 | 错题 | 分类                           | 备注    |
 | ------------------------------------------------------------ | ------ | ---- | ---- | ---- | ------------------------------ | ------- |
-| [剑指 Offer 13. 机器人的运动范围](https://leetcode-cn.com/problems/ji-qi-ren-de-yun-dong-fan-wei-lcof/) | ✔      | mid  |      |      | [dfs.md](search\dfs.md)        |         |
+| [127. 单词接龙](https://leetcode-cn.com/problems/word-ladder/) | ❌      |      |      |      |                                |         |
+| [130. 被围绕的区域](https://leetcode-cn.com/problems/surrounded-regions/) | ❌      |      |      |      | [dfs.md](search\dfs.md)        | 超时    |
+| [200. 岛屿数量](https://leetcode-cn.com/problems/number-of-islands/) | ✔      | mid  |      |      | [dfs.md](search\dfs.md)        |         |
 | [542. 01 矩阵](https://leetcode-cn.com/problems/01-matrix/)  | ✔      | mid  |      | ✔    | [bfs.md](search\bfs.md) <br>dp |         |
+| [695. 岛屿的最大面积](https://leetcode-cn.com/problems/max-area-of-island/) | ✔      | mid  |      |      | [dfs.md](search\dfs.md)        |         |
 | [1091. 二进制矩阵中的最短路径](https://leetcode-cn.com/problems/shortest-path-in-binary-matrix/) | ✔      | mid  |      |      | [bfs.md](search\bfs.md)        |         |
 | [1162. 地图分析](https://leetcode-cn.com/problems/as-far-from-land-as-possible/) | ✔      | mid  |      |      | [bfs.md](search\bfs.md) <br>dp | 同542题 |
+| [剑指 Offer 13. 机器人的运动范围](https://leetcode-cn.com/problems/ji-qi-ren-de-yun-dong-fan-wei-lcof/) | ✔      | mid  |      |      | [dfs.md](search\dfs.md)        |         |
 
 ## 栈、队列与堆
 
