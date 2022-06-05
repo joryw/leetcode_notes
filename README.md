@@ -1,14 +1,95 @@
-# leetcode_notes
+# leetcode_note
 
-**当前总题数：132(不包含重复题目)**
+## 数组
+
+| 题目                             | 已完成 | 难度 | 好题 | 错题 | 分类                                                       | 备注                  |
+| -------------------------------- | ------ | ---- | ---- | ---- | ---------------------------------------------------------- | --------------------- |
+| 1. 两数之和                      | ✔      | esay |      |      | [Hash.md](Arrays\Hash.md)                                  |                       |
+| 4. 寻找两个正序数组的中位数      | ✔      | mid  |      |      | [BinarySearch.md](Arrays\BinarySearch.md)                  |                       |
+| 27. 移除元素                     | ✔      | esay |      |      | [DoublePointer.md](Arrays\DoublePointer.md)                |                       |
+| 26. 删除有序数组中的重复项       | ✔      | esay |      |      | [DoublePointer.md](Arrays\DoublePointer.md)                |                       |
+| 42. 接雨水                       | ✔      | hard |      |      | [DoublePointer.md](Arrays\DoublePointer.md)                |                       |
+| 48. 旋转图像                     | ✔      | mid  |      |      | [Simulation.md](Arrays\Simulation.md)                      |                       |
+| 54. 螺旋矩阵                     | ✔      | mid  |      |      | [Simulation.md](Arrays\Simulation.md)                      |                       |
+| 59. 螺旋矩阵 II                  | ✔      | mid  |      |      | [Simulation.md](Arrays\Simulation.md)                      |                       |
+| 88. 合并两个有序数组             | ✔      | esay |      |      | [DoublePointer.md](Arrays\DoublePointer.md)                |                       |
+| 167. 两数之和 II - 输入有序数组  | ✔      | mid  |      |      | [DoublePointer.md](Arrays\DoublePointer.md)                |                       |
+| 209. 长度最小的子数组            | ✔      | mid  |      |      | [SlidingWindow.md](Arrays\SlidingWindow.md)                | 耗时长，非最优解      |
+| 240. 搜索二维矩阵 II             | ✔      | mid  |      |      | [Simulation.md](Arrays\Simulation.md)                      | 初始代码不优          |
+| 283. 移动零                      | ✔      | esay |      |      | [DoublePointer.md](Arrays\DoublePointer.md)                |                       |
+| 287. 寻找重复数                  | ✔      | mid  |      | ✔    | [BinarySearch.md](Arrays\BinarySearch.md)<br>SpeedPointer  | 没有意识到二分题型    |
+| 303. 区域和检索 - 数组不可变     | ✔      | esay |      |      | [PrefixSum.md](Arrays\PrefixSum.md)                        |                       |
+| 304. 二维区域和检索 - 矩阵不可变 | ✔      | mid  |      |      | [PrefixSum.md](Arrays\PrefixSum.md)                        |                       |
+| 378. 有序矩阵中第 K 小的元素     | ✔      | mid  | ✔    |      | [BinarySearch.md](Arrays\BinarySearch.md)<br>PriorityQueue | 二分法没有独立写出来  |
+| 485. 最大连续 1 的个数           | ✔      | esay |      |      | [Simulation.md](Arrays\Simulation.md)                      |                       |
+| 560. 和为 K 的子数组             | ✔      | mid  | ✔    |      | [PrefixSum.md](Arrays\PrefixSum.md)                        | 非最优                |
+| 565. 数组嵌套                    | ✔      | mid  | ✔    |      | [Hash.md](Arrays\Hash.md)                                  |                       |
+| 566. 重塑矩阵                    | ✔      | esay |      |      | [Simulation.md](Arrays\Simulation.md)                      |                       |
+| 633. 平方数之和                  | ✔      | mid  |      | ✔    | [DoublePointer.md](Arrays\DoublePointer.md)                | 超时                  |
+| 645. 错误的集合                  | ✔      | esay |      |      | [Hash.md](Arrays\Hash.md)                                  | 一开始思路有误        |
+| 667. 优美的排列 II               | ✔      | mid  |      | ✔    | [Simulation.md](Arrays\Simulation.md)                      | 多题解                |
+| 697. 数组的度                    | ✔      | esay |      |      | [Hash.md](Arrays\Hash.md)                                  | 可以算mid难度         |
+| 704. 二分查找                    | ✔      | esay |      |      | [BinarySearch.md](Arrays\BinarySearch.md)                  |                       |
+| 766. 托普利茨矩阵                | ✔      | esay |      |      | [Simulation.md](Arrays\Simulation.md)                      |                       |
+| 769. 最多能完成排序的块          | ✔      | mid  | ✔    |      | [Simulation.md](Arrays\Simulation.md)                      | 调bug耗时长，解法不优 |
+| 977. 有序数组的平方              | ✔      | esay |      |      | [DoublePointer.md](Arrays\DoublePointer.md)                |                       |
+| 1094. 拼车                       | ✔      | mid  |      |      | [DifferentialArray.md](Arrays\DifferentialArray.md)        |                       |
+| 1109. 航班预订统计               | ✔      | mid  |      |      | [DifferentialArray.md](Arrays\DifferentialArray.md)        |                       |
+
+---
+
+## 链表
+
+| 题目                                      | 已完成 | 难度 | 好题 | 错题 | 分类                                            | 备注          |
+| ----------------------------------------- | ------ | ---- | ---- | ---- | ----------------------------------------------- | ------------- |
+| 2. 两数相加                               | ✔      | mid  |      |      | [Simulation.md](LinkedList\Simulation.md)       |               |
+| 19. 删除链表的倒数第 N 个结点             | ✔      | mid  |      |      | [DoublePointer.md](LinkedList\DoublePointer.md) |               |
+| 21. 合并两个有序链表                      | ✔      | esay |      |      | [Recursion.md](LinkedList\Recursion.md)         |               |
+| 23. 合并K个升序链表                       | ✔      | hard |      |      | [Comprehensive.md](LinkedList\Comprehensive.md) |               |
+| 24. 两两交换链表中的节点                  | ✔      | mid  |      |      | [DoublePointer.md](LinkedList\DoublePointer.md) |               |
+| 25. K 个一组翻转链表                      | ✔      | hard |      |      | [Reverse.md](LinkedList\Reverse.md)             |               |
+| 61. 旋转链表                              | ✔      | mid  |      |      | [Reverse.md](LinkedList\Reverse.md)             |               |
+| 82. 删除排序链表中的重复元素 II           | ✔      | mid  |      |      | [DoublePointer.md](LinkedList\DoublePointer.md) |               |
+| 83. 删除排序链表中的重复元素              | ✔      | esay |      |      | [DoublePointer.md](LinkedList\DoublePointer.md) |               |
+| 86. 分隔链表                              | ✔      | mid  |      |      | [DoublePointer.md](LinkedList\DoublePointer.md) |               |
+| 92. 反转链表 II                           | ✔      | mid  |      |      | [Reverse.md](LinkedList\Reverse.md)             |               |
+| 138. 复制带随机指针的链表                 | ✔      | mid  |      |      |                                                 |               |
+| 141. 环形链表]                            | ✔      | esay |      |      | [DoublePointer.md](LinkedList\DoublePointer.md) |               |
+| 142. 环形链表 II                          | ✔      | mid  |      |      | [DoublePointer.md](LinkedList\DoublePointer.md) |               |
+| 143. 重排链表                             | ✔      | mid  |      |      | [Comprehensive.md](LinkedList\Comprehensive.md) |               |
+| 147. 对链表进行插入排序                   | ✔      | mid  |      |      | [Simulation.md](LinkedList\Simulation.md)       |               |
+| 148. 排序链表                             | ✔      | mid  |      |      | [Comprehensive.md](LinkedList\Comprehensive.md) |               |
+| 160. 相交链表                             | ✔      | esay |      |      | [DoublePointer.md](LinkedList\DoublePointer.md) |               |
+| 203. 移除链表元素                         | ✔      | esay |      |      | [DoublePointer.md](LinkedList\DoublePointer.md) |               |
+| 206. 反转链表]<br>剑指 Offer 24. 反转链表 | ✔      | esay |      |      | [Reverse.md](LinkedList\Reverse.md)             |               |
+| 234. 回文链表                             | ✔      | esay |      |      | [Reverse.md](LinkedList\Reverse.md)             |               |
+| 237. 删除链表中的节点                     | ✔      | esay |      |      | [Simulation.md](LinkedList\Simulation.md)       |               |
+| 328. 奇偶链表                             | ✔      | mid  |      |      | [DoublePointer.md](LinkedList\DoublePointer.md) |               |
+| 445. 两数相加 II                          | ✔      | mid  |      |      | [DataStructure.md](LinkedList\DataStructure.md) |               |
+| 707. 设计链表                             | ✔      | mid  | ✔    | ✔    | [DataStructure.md](LinkedList\DataStructure.md) | 调bug耗时太久 |
+| 725. 分隔链表                             | ✔      | mid  |      |      | [Simulation.md](LinkedList\Simulation.md)       |               |
+| 876. 链表的中间结点                       | ✔      | esay |      |      | [DoublePointer.md](LinkedList\DoublePointer.md) |               |
+
+## 字符串
+
+| 题目                                                         | 已完成 | 难度 | 好题 | 错题 | 分类                                        | 备注                                |
+| ------------------------------------------------------------ | ------ | ---- | ---- | ---- | ------------------------------------------- | ----------------------------------- |
+| 3. 无重复字符的最长子串                                      | ✔      | mid  | ✔    | ✔    | [Hash.md](String\Hash.md)                   | 耗时长，细节没处理好                |
+| [28. 实现 strStr()](https://leetcode.cn/problems/implement-strstr/) | ✔      | esay |      |      | [Simulation.md](String\Simulation.md)       |                                     |
+| [76. 最小覆盖子串](https://leetcode-cn.com/problems/minimum-window-substring/) |        |      |      |      |                                             |                                     |
+| 151. 颠倒字符串中的单词                                      | ✔      | mid  |      |      | [DoublePointer.md](String\DoublePointer.md) |                                     |
+| [344. 反转字符串](https://leetcode-cn.com/problems/reverse-string/) | ✔      | esay |      |      | [DoublePointer.md](String\DoublePointer.md) |                                     |
+| [345. 反转字符串中的元音字母](https://leetcode-cn.com/problems/reverse-vowels-of-a-string/) | ✔      | esay |      |      | [DoublePointer.md](String\DoublePointer.md) |                                     |
+| [438. 找到字符串中所有字母异位词](https://leetcode-cn.com/problems/find-all-anagrams-in-a-string/) |        |      |      |      |                                             |                                     |
+| [459. 重复的子字符串](https://leetcode.cn/problems/repeated-substring-pattern/) | ✔      | esay |      |      | [Simulation.md](String\Simulation.md)       | 不能用`==`比较字符串<br>KMP处理方案 |
+| [541. 反转字符串 II](https://leetcode.cn/problems/reverse-string-ii/) | ✔      | esay |      |      | [Simulation.md](String\Simulation.md)       | 解答太慢了，转数组快些              |
+| [524. 通过删除字母匹配到字典里最长单词](https://leetcode-cn.com/problems/longest-word-in-dictionary-through-deleting/) | ✔      | mid  |      |      | [DoublePointer.md](String\DoublePointer.md) | 速度快，代码不优                    |
+| [567. 字符串的排列](https://leetcode-cn.com/problems/permutation-in-string/) |        |      |      |      |                                             |                                     |
+| [680. 验证回文字符串 Ⅱ](https://leetcode-cn.com/problems/valid-palindrome-ii/) | ✔      | esay |      |      | [DoublePointer.md](String\DoublePointer.md) |                                     |
+| [剑指 Offer 05. 替换空格](https://leetcode.cn/problems/ti-huan-kong-ge-lcof/) | ✔      | esay |      |      | [Simulation.md](String\Simulation.md)       |                                     |
+| [剑指 Offer 58 - II. 左旋转字符串](https://leetcode.cn/problems/zuo-xuan-zhuan-zi-fu-chuan-lcof/) | ✔      | esay |      |      | [Simulation.md](String\Simulation.md)       |                                     |
 
 ## 树
-
-### 刷题统计
-
-**刷题进度：**  67
-
-**刷题表格：**
 
 | 题目                                                         | 已完成 | 难度 | 好题 | 错题 | 备注                                                 |
 | ------------------------------------------------------------ | ------ | ---- | ---- | ---- | ---------------------------------------------------- |
@@ -82,10 +163,6 @@
 
 ## 动态规划
 
-### 刷题统计
-
-刷题数量：64
-
 | 题目                                                         | 已完成 | 难度 | 好题 | 错题 | 分类                                  | 备注                                 |
 | ------------------------------------------------------------ | ------ | ---- | ---- | ---- | ------------------------------------- | ------------------------------------ |
 | 5. 最长回文子串                                              | ✔      | mid  |      |      | [回文串.md](dp\回文串.md)             | 中心扩散                             |
@@ -117,6 +194,7 @@
 | 300. 最长递增子序列                                          | ✔      | mid  |      |      | [子序列.md](dp\子序列.md)             |                                      |
 | 303. 区域和检索 - 数组不可变                                 | ✔      | esay |      |      | [数组区间.md](dp\数组区间.md)         |                                      |
 | 309. 最佳买卖股票时机含冷冻期                                | ✔      | mid  |      | ✔    | [股票问题.md](dp\股票问题.md)         |                                      |
+| [312. 戳气球](https://leetcode-cn.com/problems/burst-balloons/) | ❌      |      |      |      |                                       |                                      |
 | 322. 零钱兑换                                                | ✔      | mid  |      |      | [背包问题.md](dp\背包问题.md)         |                                      |
 | [338. 比特位计数](https://leetcode-cn.com/problems/counting-bits/) | ✔      | esay |      | ✔    | [数学.md](dp\数学.md)                 | 思路不清晰，耗时太久了               |
 | 343. 整数拆分<br>[剑指 Offer 14- I. 剪绳子](https://leetcode-cn.com/problems/jian-sheng-zi-lcof/) | ✔      | mid  |      |      | [分割整数.md](dp\分割整数.md)         | 分类讨论                             |
@@ -127,6 +205,7 @@
 | 416. 分割等和子集                                            | ✔      | mid  |      |      | [背包问题.md](dp\背包问题.md)         |                                      |
 | 474. 一和零                                                  | ✔      | mid  | ✔    | ✔    | [背包问题.md](dp\背包问题.md)         | 二维0-1背包                          |
 | 494. 目标和                                                  | ✔      | mid  |      |      | [背包问题.md](dp\背包问题.md)         |                                      |
+| [514. 自由之路](https://leetcode-cn.com/problems/freedom-trail/) | ❌      |      |      |      |                                       |                                      |
 | [516. 最长回文子序列](https://leetcode-cn.com/problems/longest-palindromic-subsequence/) | ✔      | mid  | ✔    | ✔    | [回文串.md](dp\回文串.md)             | 没有独立思考出状态方程               |
 | 518. 零钱兑换 II                                             | ✔      | mid  | ✔    | ✔    | [背包问题.md](dp\背包问题.md)         | 没有充分理解，类似爬楼梯             |
 | 583. 两个字符串的删除操作                                    | ✔      | mid  |      |      | [子序列.md](dp\子序列.md)             |                                      |
@@ -139,6 +218,7 @@
 | 718. 最长重复子数组                                          | ✔      | mid  |      |      | [子序列.md](dp\子序列.md)             |                                      |
 | [740. 删除并获得点数](https://leetcode-cn.com/problems/delete-and-earn/) | ✔      | mid  |      | ✔    | [斐波那契数列.md](dp\斐波那契数列.md) | 一开始没想到题型                     |
 | [746. 使用最小花费爬楼梯](https://leetcode-cn.com/problems/min-cost-climbing-stairs/) | ✔      | easy |      |      | [斐波那契数列.md](dp\斐波那契数列.md) |                                      |
+| [887. 鸡蛋掉落](https://leetcode-cn.com/problems/super-egg-drop/) | ❌      |      |      |      |                                       |                                      |
 | [931. 下降路径最小和](https://leetcode-cn.com/problems/minimum-falling-path-sum/) | ✔      | mid  |      |      | [矩阵路径.md](dp\矩阵路径.md)         |                                      |
 | [1025. 除数博弈](https://leetcode-cn.com/problems/divisor-game/) | ✔      | easy |      |      | [数学.md](dp\数学.md)                 |                                      |
 | 1035. 不相交的线                                             | ✔      | mid  |      |      | [子序列.md](dp\子序列.md)             |                                      |
@@ -154,8 +234,6 @@
 | 原创题：母牛生产                                             | ✔      | mid  |      |      | [斐波那契数列.md](dp\斐波那契数列.md) |                                      |
 
 ## 回溯
-
-题数：15
 
 | 题目                                                         | 已完成 | 难度 | 好题 | 错题 | 分类                         | 备注                 |
 | ------------------------------------------------------------ | ------ | ---- | ---- | ---- | ---------------------------- | -------------------- |
@@ -179,8 +257,6 @@
 
 ## 贪心
 
-刷题数量：17
-
 | 题目                                                         | 已完成 | 难度 | 好题 | 错题 | 分类                                                 | 备注                 |
 | ------------------------------------------------------------ | ------ | ---- | ---- | ---- | ---------------------------------------------------- | -------------------- |
 | [45. 跳跃游戏 II](https://leetcode-cn.com/problems/jump-game-ii/) | ✔      | mid  |      |      | [区间问题.md](greed\区间问题.md)                     |                      |
@@ -203,37 +279,31 @@
 | [1005. K 次取反后最大化的数组和](https://leetcode-cn.com/problems/maximize-sum-of-array-after-k-negations/) | ✔      | esay |      | ✔    | 优先队列&计数统计                                    | 考虑不全面           |
 | [1024. 视频拼接](https://leetcode-cn.com/problems/video-stitching/) | ✔      | mid  | ✔    | ✔    |                                                      | 思路正确，代码没跑通 |
 
-## 双指针
-
-| 题目                                                         | 已完成 | 难度 | 好题 | 错题 | 备注 |
-| ------------------------------------------------------------ | ------ | ---- | ---- | ---- | ---- |
-| [42. 接雨水](https://leetcode-cn.com/problems/trapping-rain-water/) | ✔      | hard |      |      |      |
+---
 
 ## 搜索（bfs\dfs）
 
-| 题目                                                         | 已完成 | 难度 | 好题 | 错题 | 分类                           | 备注    |
-| ------------------------------------------------------------ | ------ | ---- | ---- | ---- | ------------------------------ | ------- |
-| [127. 单词接龙](https://leetcode-cn.com/problems/word-ladder/) | ❌      |      |      |      |                                |         |
-| [130. 被围绕的区域](https://leetcode-cn.com/problems/surrounded-regions/) | ❌      |      |      |      | [dfs.md](search\dfs.md)        | 超时    |
-| [200. 岛屿数量](https://leetcode-cn.com/problems/number-of-islands/) | ✔      | mid  |      |      | [dfs.md](search\dfs.md)        |         |
-| [542. 01 矩阵](https://leetcode-cn.com/problems/01-matrix/)  | ✔      | mid  |      | ✔    | [bfs.md](search\bfs.md) <br>dp |         |
-| [695. 岛屿的最大面积](https://leetcode-cn.com/problems/max-area-of-island/) | ✔      | mid  |      |      | [dfs.md](search\dfs.md)        |         |
-| [1091. 二进制矩阵中的最短路径](https://leetcode-cn.com/problems/shortest-path-in-binary-matrix/) | ✔      | mid  |      |      | [bfs.md](search\bfs.md)        |         |
-| [1162. 地图分析](https://leetcode-cn.com/problems/as-far-from-land-as-possible/) | ✔      | mid  |      |      | [bfs.md](search\bfs.md) <br>dp | 同542题 |
-| [剑指 Offer 13. 机器人的运动范围](https://leetcode-cn.com/problems/ji-qi-ren-de-yun-dong-fan-wei-lcof/) | ✔      | mid  |      |      | [dfs.md](search\dfs.md)        |         |
+| 题目                                                         | 已完成 | 难度 | 好题 | 错题 | 分类                                     | 备注                       |
+| ------------------------------------------------------------ | ------ | ---- | ---- | ---- | ---------------------------------------- | -------------------------- |
+| [127. 单词接龙](https://leetcode-cn.com/problems/word-ladder/) | ❌      |      |      |      |                                          |                            |
+| [130. 被围绕的区域](https://leetcode-cn.com/problems/surrounded-regions/) | ✔      | mid  |      |      | [dfs.md](search\dfs.md)                  | 边缘开始，有时间学下并查集 |
+| [200. 岛屿数量](https://leetcode-cn.com/problems/number-of-islands/) | ✔      | mid  |      |      | [dfs.md](search\dfs.md)                  |                            |
+| [417. 太平洋大西洋水流问题](https://leetcode-cn.com/problems/pacific-atlantic-water-flow/) | ✔      | mid  | ✔    | ✔    | [dfs.md](search\dfs.md)                  | 思路不清晰,代码下不去手    |
+| [542. 01 矩阵](https://leetcode-cn.com/problems/01-matrix/)  | ✔      | mid  |      | ✔    | [bfs.md](search\bfs.md) <br>dp           |                            |
+| [547. 省份数量](https://leetcode-cn.com/problems/number-of-provinces/) | ✔      | mid  |      | ✔    | [UnionFind.md](search\UnionFind.md) &dfs |                            |
+| [695. 岛屿的最大面积](https://leetcode-cn.com/problems/max-area-of-island/) | ✔      | mid  |      |      | [dfs.md](search\dfs.md)                  |                            |
+| [1091. 二进制矩阵中的最短路径](https://leetcode-cn.com/problems/shortest-path-in-binary-matrix/) | ✔      | mid  |      |      | [bfs.md](search\bfs.md)                  |                            |
+| [1162. 地图分析](https://leetcode-cn.com/problems/as-far-from-land-as-possible/) | ✔      | mid  |      |      | [bfs.md](search\bfs.md) <br>dp           | 同542题                    |
+| [剑指 Offer 13. 机器人的运动范围](https://leetcode-cn.com/problems/ji-qi-ren-de-yun-dong-fan-wei-lcof/) | ✔      | mid  |      |      | [dfs.md](search\dfs.md)                  |                            |
 
-## 栈、队列与堆
+## 栈、队列、堆、
 
 | 题目                                                         | 已完成 | 难度 | 好题 | 错题 | 分类                                    | 备注           |
 | ------------------------------------------------------------ | ------ | ---- | ---- | ---- | --------------------------------------- | -------------- |
 | [84. 柱状图中最大的矩形](https://leetcode-cn.com/problems/largest-rectangle-in-histogram/) | ✔      | hard |      | ✔    | [单调栈.md](stack&queue&heap\单调栈.md) | 对单调栈不熟悉 |
 | [85. 最大矩形](https://leetcode-cn.com/problems/maximal-rectangle/) | ✔      | hard |      |      | [单调栈.md](stack&queue&heap\单调栈.md) | 参考上题       |
 
-
-
 ---
-
-
 
 ## 代办
 
@@ -241,4 +311,5 @@
 - [ ] 将所有题目对应上分类链接
 - [ ] 将错题再做一遍
 - [ ] 将❌的题目做出来
+- [ ] 删除首页超链接，方便检索
 
