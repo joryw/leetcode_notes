@@ -5,7 +5,7 @@
 | 题目                             | 已完成 | 难度 | 好题 | 错题 | 分类                                                       | 备注                  |
 | -------------------------------- | ------ | ---- | ---- | ---- | ---------------------------------------------------------- | --------------------- |
 | 1. 两数之和                      | ✔      | esay |      |      | [Hash.md](Arrays\Hash.md)                                  |                       |
-| 4. 寻找两个正序数组的中位数      | ✔      | mid  |      |      | [BinarySearch.md](Arrays\BinarySearch.md)                  |                       |
+| 4. 寻找两个正序数组的中位数      | ✔      | hard |      |      | [BinarySearch.md](Arrays\BinarySearch.md)                  |                       |
 | 27. 移除元素                     | ✔      | esay |      |      | [DoublePointer.md](Arrays\DoublePointer.md)                |                       |
 | 26. 删除有序数组中的重复项       | ✔      | esay |      |      | [DoublePointer.md](Arrays\DoublePointer.md)                |                       |
 | 42. 接雨水                       | ✔      | hard |      |      | [DoublePointer.md](Arrays\DoublePointer.md)                |                       |
@@ -185,32 +185,32 @@
 | 139. 单词拆分                                                | ✔      | mid  | ✔    | ✔    | [背包问题.md](dp\背包问题.md)         | 分阶段，从后往前匹配                 |
 | 152. 乘积最大子数组                                          | ✔      | mid  | ✔    | ✔    | [连续子数组.md](dp\连续子数组.md)     | 当前最大值、最小值和全局最大值       |
 | 174. 地下城游戏                                              | ✔      | hard |      | ✔    | [矩阵路径.md](dp\矩阵路径.md)         | 状态方程                             |
-| [188. 买卖股票的最佳时机 IV](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-iv/) | ✔      | hard |      |      | [股票问题.md](dp\股票问题.md)         | 根据123题可以举一反三                |
-| 198. 打家劫舍<br>[面试题 17.16. 按摩师](https://leetcode-cn.com/problems/the-masseuse-lcci/) | ✔      | mid  |      |      | [斐波那契数列.md](dp\斐波那契数列.md) |                                      |
+| 188. 买卖股票的最佳时机 IV                                   | ✔      | hard |      |      | [股票问题.md](dp\股票问题.md)         | 根据123题可以举一反三                |
+| 198. 打家劫舍<br>面试题 17.16. 按摩师                        | ✔      | mid  |      |      | [斐波那契数列.md](dp\斐波那契数列.md) |                                      |
 | 213. 打家劫舍 II                                             | ✔      | mid  |      |      | [斐波那契数列.md](dp\斐波那契数列.md) |                                      |
-| [221. 最大正方形](https://leetcode-cn.com/problems/maximal-square/) | ✔      | mid  |      |      | [数学.md](dp\数学.md)                 |                                      |
-| [264. 丑数 II](https://leetcode-cn.com/problems/ugly-number-ii/) | ✔      | mid  |      | ✔    | [数学.md](dp\数学.md)                 |                                      |
+| 221. 最大正方形                                              | ✔      | mid  |      |      | [数学.md](dp\数学.md)                 |                                      |
+| 264. 丑数 II                                                 | ✔      | mid  |      | ✔    | [数学.md](dp\数学.md)                 |                                      |
 | 279. 完全平方数                                              | ✔      | mid  |      |      | [分割整数.md](dp\分割整数.md)         |                                      |
 | 300. 最长递增子序列                                          | ✔      | mid  |      |      | [子序列.md](dp\子序列.md)             |                                      |
 | 303. 区域和检索 - 数组不可变                                 | ✔      | esay |      |      | [数组区间.md](dp\数组区间.md)         |                                      |
 | 309. 最佳买卖股票时机含冷冻期                                | ✔      | mid  |      | ✔    | [股票问题.md](dp\股票问题.md)         |                                      |
-| [312. 戳气球](https://leetcode-cn.com/problems/burst-balloons/) | ❌      |      |      |      |                                       |                                      |
+| 312. 戳气球                                                  | ❌      |      |      |      |                                       |                                      |
 | 322. 零钱兑换                                                | ✔      | mid  |      |      | [背包问题.md](dp\背包问题.md)         |                                      |
-| [338. 比特位计数](https://leetcode-cn.com/problems/counting-bits/) | ✔      | esay |      | ✔    | [数学.md](dp\数学.md)                 | 思路不清晰，耗时太久了               |
-| 343. 整数拆分<br>[剑指 Offer 14- I. 剪绳子](https://leetcode-cn.com/problems/jian-sheng-zi-lcof/) | ✔      | mid  |      |      | [分割整数.md](dp\分割整数.md)         | 分类讨论                             |
-| [354. 俄罗斯套娃信封问题](https://leetcode-cn.com/problems/russian-doll-envelopes/) | ✔      | hard | ✔    | ✔    | [子序列.md](dp\子序列.md)             |                                      |
+| 338. 比特位计数                                              | ✔      | esay |      | ✔    | [数学.md](dp\数学.md)                 | 思路不清晰，耗时太久了               |
+| 343. 整数拆分<br>剑指 Offer 14- I. 剪绳子                    | ✔      | mid  |      |      | [分割整数.md](dp\分割整数.md)         | 分类讨论                             |
+| 354. 俄罗斯套娃信封问题                                      | ✔      | hard | ✔    | ✔    | [子序列.md](dp\子序列.md)             |                                      |
 | 377. 组合总和 Ⅳ                                              | ✔      | mid  | ✔    | ✔    | [背包问题.md](dp\背包问题.md)         | 组合问题，应该从子问题中得归纳出来   |
 | 392. 判断子序列                                              | ✔      | esay |      |      | [编辑距离.md](dp\编辑距离.md)&贪心    |                                      |
 | 413. 等差数列划分                                            | ✔      | mid  | ✔    |      | [数组区间.md](dp\数组区间.md)         | 动态规划比滑动窗口更简便             |
 | 416. 分割等和子集                                            | ✔      | mid  |      |      | [背包问题.md](dp\背包问题.md)         |                                      |
 | 474. 一和零                                                  | ✔      | mid  | ✔    | ✔    | [背包问题.md](dp\背包问题.md)         | 二维0-1背包                          |
 | 494. 目标和                                                  | ✔      | mid  |      |      | [背包问题.md](dp\背包问题.md)         |                                      |
-| [514. 自由之路](https://leetcode-cn.com/problems/freedom-trail/) | ❌      |      |      |      |                                       |                                      |
-| [516. 最长回文子序列](https://leetcode-cn.com/problems/longest-palindromic-subsequence/) | ✔      | mid  | ✔    | ✔    | [回文串.md](dp\回文串.md)             | 没有独立思考出状态方程               |
+| 514. 自由之路                                                | ❌      |      |      |      |                                       |                                      |
+| 516. 最长回文子序列                                          | ✔      | mid  | ✔    | ✔    | [回文串.md](dp\回文串.md)             | 没有独立思考出状态方程               |
 | 518. 零钱兑换 II                                             | ✔      | mid  | ✔    | ✔    | [背包问题.md](dp\背包问题.md)         | 没有充分理解，类似爬楼梯             |
 | 583. 两个字符串的删除操作                                    | ✔      | mid  |      |      | [子序列.md](dp\子序列.md)             |                                      |
 | 646. 最长数对链                                              | ✔      | mid  | ✔    |      | [子序列.md](dp\子序列.md)             | 画图讨论、贪心                       |
-| [647. 回文子串](https://leetcode-cn.com/problems/palindromic-substrings/) | ✔      | mid  |      | ✔    | [回文串.md](dp\回文串.md)             | 动态规划或中心扩展                   |
+| 647. 回文子串                                                | ✔      | mid  |      | ✔    | [回文串.md](dp\回文串.md)             | 动态规划或中心扩展                   |
 | 650. 只有两个键的键盘                                        | ✔      | mid  |      | ✔    | [编辑距离.md](dp\编辑距离.md)         | 解题耗时长                           |
 | 674. 最长连续递增序列                                        | ✔      | esay |      |      | [子序列.md](dp\子序列.md)             |                                      |
 | [712. 两个字符串的最小ASCII删除和](https://leetcode-cn.com/problems/minimum-ascii-delete-sum-for-two-strings/) | ✔      | mid  |      | ✔    | [子序列.md](dp\子序列.md)             | 删除状态方程没定义好                 |

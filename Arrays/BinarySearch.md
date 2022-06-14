@@ -27,6 +27,96 @@ class Solution {
 
 组成一个有序数组，再找中位数
 
+#### 二分查找
+
+```java
+class Solution {
+    public double findMedianSortedArrays(int[] nums1, int[] nums2) {
+        int n = nums1.length;
+        int m = nums2.length;
+        //分别上下取整找中位数
+        int left = (n + m + 1) / 2;
+        int right = (n + m + 2) / 2;
+        //奇偶情况合并，除2.0保留浮点数形式
+        return (findKth(nums1, 0, n - 1, nums2, 0, m - 1, left) + findKth(nums1, 0, n - 1, nums2, 0, m - 1, right)) / 2.0;
+    }
+
+    public int findKth(int[] nums1, int start1, int end1, int[] nums2, int start2, int end2, int k) {
+        int len1 = end1 - start1 + 1;
+        int len2 = end2 - start2 + 1;
+        //保证len1长度比较小
+        if(len1 > len2) {
+            return findKth(nums2, start2, end2, nums1, start1, end1, k);
+        }
+        if(len1 == 0) {
+            return nums2[start2 + k - 1];
+        }
+        if(k == 1) {
+            return Math.min(nums1[start1], nums2[start2]);
+        }
+        int i = start1 + Math.min(k / 2, len1) - 1;
+        int j = start2 + Math.min(k / 2, len2) - 1;
+        if(nums1[i] > nums2[j]) {
+            return findKth(nums1, start1, end1, nums2, j + 1, end2, k - (j - start2 + 1));
+        } else {
+            return findKth(nums1, i + 1, end1, nums2, start2, end2, k - (i - start1 + 1));
+        }
+    }
+}
+```
+
+为找第k位，先找到两个数组的k/2位，去掉较小值前部分，更新k值，以此类推
+
+![image.png](https://pic.leetcode-cn.com/09b8649cd2b8bbea74f7f632b098fed5f8404530ff44b5a0b54a360b3cf7dd8f-image.png)
+
+#### 数组切割
+
+```JAVA
+class Solution {
+    public double findMedianSortedArrays(int[] nums1, int[] nums2) {
+        int n = nums1.length, m = nums2.length;
+        if(n > m) return findMedianSortedArrays(nums2, nums1);
+
+        int iMin = 0, iMax = n;
+        while(iMin <= iMax) {
+            int i = iMin + (iMax - iMin) / 2;
+            int j = (m + n + 1) / 2 - i;
+
+            if(i != 0 && j != m && nums1[i - 1] > nums2[j]) {
+                iMax = i - 1;
+            }
+            else if(j != 0 && i != n && nums1[i] < nums2[j - 1]) {
+                iMin = i + 1;
+            } else {
+                int leftMid = 0;
+                if(i == 0) {
+                    leftMid = nums2[j - 1];
+                } else if (j == 0) {
+                    leftMid = nums1[i - 1];
+                } else {
+                    leftMid = Math.max(nums1[i - 1], nums2[j - 1]);
+                }
+                if((m + n) % 2 != 0) {
+                    return leftMid;
+                }
+                int rightMid = 0;
+                if(i == n) {
+                    rightMid = nums2[j];
+                } else if(j == m) {
+                    rightMid = nums1[i];
+                } else {
+                    rightMid = Math.min(nums1[i], nums2[j]);
+                }
+                return (leftMid + rightMid) / 2.0;
+            }
+        }
+        return 0.0;
+    }
+}
+```
+
+[题解](https://leetcode.cn/problems/median-of-two-sorted-arrays/solution/xiang-xi-tong-su-de-si-lu-fen-xi-duo-jie-fa-by-w-2/[)中解法4
+
 ### [287. 寻找重复数](https://leetcode-cn.com/problems/find-the-duplicate-number/)
 
 #### 二分查找
