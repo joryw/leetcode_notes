@@ -94,3 +94,21 @@ Collections.sort(dictionary, (a, b) -> {
 ### 12.字符串相等
 
 不能用`==`  要用`equals`比较字符串是否相等
+
+### 13.switch用法
+
+```java
+switch(c) {
+  case '+':
+    ways.add(l + r);
+    break;
+  case '-':
+    ways.add(l - r);
+    break;
+  case '*':
+    ways.add(l * r);
+    break;
+}
+```
+
+如果不想顺序执行，记得加上break，结束后续case

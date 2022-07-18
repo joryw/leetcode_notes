@@ -117,6 +117,91 @@ class Solution {
 
 [题解](https://leetcode.cn/problems/median-of-two-sorted-arrays/solution/xiang-xi-tong-su-de-si-lu-fen-xi-duo-jie-fa-by-w-2/[)中解法4
 
+### [34. 在排序数组中查找元素的第一个和最后一个位置](https://leetcode.cn/problems/find-first-and-last-position-of-element-in-sorted-array/)
+
+#### 方案1:二分找target的上一个值，供target+1复用
+
+```java
+class Solution {
+    public int[] searchRange(int[] nums, int target) {
+        if(nums.length == 0) {
+            return new int[]{-1, -1};
+        }
+        int right = search(nums, target + 1);
+        if(right == -1 ||nums[right] != target) {
+            return new int[]{-1, -1};
+        }
+        int left = search(nums, target) + 1;
+        return new int[]{left, right};
+    }
+
+    public int search(int[] nums, int target) {
+        int left = -1, right = nums.length - 1;
+        while(left < right) {
+            int mid = left + (right - left + 1) / 2;
+            if(nums[mid] >= target) {
+                right = mid - 1;
+            } else {
+                left = mid;
+            }
+        }
+        return left;
+    }
+}
+```
+
+##### 思路
+
+1. 当target+1传入的值，找不到nums[right] != target，则说明不存在该值
+2. 处理好边界条件，如`int left = -1`,`if(right == -1`等
+
+#### 方案2:写找开头跟找结尾两种二分查找。
+
+### [69. x 的平方根 ](https://leetcode.cn/problems/sqrtx/)
+
+```java
+class Solution {
+    public int mySqrt(int x) {
+        if(x < 2) return x;
+        long left = 1, right = x / 2;
+        while(left < right) {
+            //这里通过+1，实现了取中点时取右节点，防止剩下两个节点时重复执行left=mid
+            long mid = left + (right - left + 1) / 2;
+            if(mid * mid > x) {
+                right = mid - 1;
+            } else if (mid * mid < x){
+                left = mid;
+            } else {
+                return (int)mid;
+            }
+        }
+        return (int)left;
+    }
+}
+```
+
+### [153. 寻找旋转排序数组中的最小值](https://leetcode.cn/problems/find-minimum-in-rotated-sorted-array/)
+
+```java
+class Solution {
+    public int findMin(int[] nums) {
+        int left = 0, right = nums.length - 1;
+        int flat = nums[right];
+        while(left < right) {
+            int mid = left + (right - left) / 2;
+            if(nums[mid] < flat) {
+                right = mid;
+            } else {
+                left = mid + 1;
+            }
+        }
+        return nums[left];
+    }
+}
+```
+
+
+
 ### [287. 寻找重复数](https://leetcode-cn.com/problems/find-the-duplicate-number/)
 
 #### 二分查找
@@ -261,6 +346,50 @@ class Solution {
     }
 }
 ```
+
+### [540. 有序数组中的单一元素](https://leetcode.cn/problems/single-element-in-a-sorted-array/)
+
+#### 方案1:异或
+
+```java
+class Solution {
+    public int singleNonDuplicate(int[] nums) {
+        int ans = 0;
+        for(int num : nums) {
+            ans ^= num;
+        }
+        return ans;
+    }
+}
+```
+
+#### 方案2:二分
+
+```java
+class Solution {
+    public int singleNonDuplicate(int[] nums) {
+        int left = 0, right = nums.length - 1;
+        while(left < right) {
+            int mid = left + (right - left) / 2;
+            if(mid < nums.length - 1 && mid % 2 == 0 && nums[mid] == nums[mid + 1] || mid > 0 && mid % 2 == 1 && nums[mid] == nums[mid - 1]) {
+                left = mid + 1;
+            } else if (mid < nums.length - 1 && mid % 2 == 1 && nums[mid] == nums[mid + 1] || mid > 0 && mid % 2 == 0 && nums[mid] == nums[mid - 1]) {
+                right = mid - 1;
+            } else {
+                return nums[mid];
+            }
+        }
+        return nums[left];
+    }
+}
+```
+
+分情况讨论
+
+1. mid为偶数，Vmid == V(mid - 1) , right = mid - 1；
+2. mid为偶数，Vmid == V(mid +1)，left = mid + 1;
+3. mid为奇数，Vmid == V(mid - 1)，left = mid + 1；
+4. mid为奇数，Vmid == (mid + 1)，right = mid - 1； 
 
 ### [704. 二分查找](https://leetcode-cn.com/problems/binary-search/)
 

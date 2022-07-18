@@ -1,3 +1,32 @@
+### [6. Z 字形变换](https://leetcode.cn/problems/zigzag-conversion/)
+
+```java
+class Solution {
+    public String convert(String s, int numRows) {
+        if(numRows < 2) return s;
+        List<StringBuilder> str = new ArrayList();
+        for(int i = 0; i < numRows; i++) {
+            str.add(new StringBuilder());
+        }
+        int i = 0, flag = -1;
+        for(char c : s.toCharArray()) {
+            str.get(i).append(c);
+            if(i == 0 || i == numRows - 1) {
+                flag = -flag;
+            }
+            i += flag;
+        }
+        StringBuilder ans = new StringBuilder();
+        for(StringBuilder row : str) {
+            ans.append(row);
+        }
+        return ans.toString();
+    }
+}
+```
+
+![image-20220623112957559](/Users/jory/Library/Application Support/typora-user-images/image-20220623112957559.png)
+
 ### [28. 实现 strStr()](https://leetcode.cn/problems/implement-strstr/)
 
 ```java
